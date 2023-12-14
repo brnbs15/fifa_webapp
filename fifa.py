@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import sklearn
 
 #python -m streamlit run file.py
 pickled_model = pickle.load(open('./models/fifa_classifier_model_dtree.pkl', 'rb'))
