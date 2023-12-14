@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import pickle as pk
 
 #python -m streamlit run file.py
-pickled_model = pickle.load(open('./models/fifa_classifier_model_dtree.pkl', 'rb'))
+pickled_model = pk.load(open('./models/fifa_classifier_model_dtree.pkl', 'rb'))
 st.set_page_config(layout="wide")
 st.title('FIFA cards classification')
 id=246621
