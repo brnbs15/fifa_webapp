@@ -1,0 +1,6 @@
+sklearn.neighbors
+scikit-learn
+numpy==1.23.5
+streamlit==1.22.0
+pickle-mixin==1.0.2
+streamlit-option-menu==0.3.2
