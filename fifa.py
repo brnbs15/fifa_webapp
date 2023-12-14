@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 #python -m streamlit run file.py
-pickled_model = pickle.load(open('./models/fifa_classifier_model_dtree2.pkl', 'rb'))
+pickled_model = pickle.load(open('./models/fifa_classifier_model_dtree.pkl', 'rb'))
 st.set_page_config(layout="wide")
 st.title('FIFA cards classification')
 id=246621
@@ -102,7 +102,6 @@ phy_calc(jump,stamina,strength,aggr)+dri_calc(agility,balance,react,ballcont,dri
 sho_calc(attposition,finish,shotp,longshot,volley,penalty)+pace_calc(sprint,accel))/6)
 with col8:
     if st.button('Create Fifa card',type="primary"):
-        st.write(id+1)
         card_prediction = pickled_model.predict(input_data)
         
         if card_prediction[0]==1:
