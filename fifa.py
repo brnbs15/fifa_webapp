@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 #python -m streamlit run file.py
-pickled_model = joblib.load('./models/fifa_classifier_model_dtree.pkl')
+pickled_model = joblib.load('./models/fifa_classifier_model_dtree1.pkl')
 st.set_page_config(layout="wide")
 st.title('FIFA cards classification')
 id=246621
